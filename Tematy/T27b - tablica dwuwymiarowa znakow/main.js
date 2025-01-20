@@ -3,7 +3,19 @@ const btn = document.querySelector('button');
 const wynik = document.querySelector('#wynik');
 
 btn.addEventListener('click', function(){
-    let arr = [7][7];
+    wynik.innerHTML = ``;
+
+    let arr = [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+    ];
+
+////////////////////////////////////////////////////////////////////////
 
     for(let i=0; i<7; i++)
     {
@@ -11,7 +23,18 @@ btn.addEventListener('click', function(){
             arr[i][j] = litery[Math.floor(Math.random()*5)];
     }
 
-    wynik.innerHTML = `Litera A wystąpiła razy: ${checkAs(arr)}`;
+////////////////////////////////////////////////////////////////////////
+
+    for(let i=0; i<arr.length; i++)
+    {
+        for(let j=0; j<arr[i].length; j++)
+            wynik.innerHTML += `<span>${arr[i][j]}</span>`;
+        wynik.innerHTML += `<br><br>`;
+    }
+
+////////////////////////////////////////////////////////////////////////
+
+    wynik.innerHTML += `Litera A wystąpiła razy: ${checkAs(arr)}<br>`;
 });
 
 function checkAs(arr)
@@ -19,7 +42,7 @@ function checkAs(arr)
     let x = 0;
     for(let i=0; i<arr.length; i++)
     {
-        for (let j = 0; j < arr[0].length; j++)
+        for (let j = 0; j < arr[i].length; j++)
         {
             if(arr[i][j] === 'a')
                 x++;
@@ -29,4 +52,9 @@ function checkAs(arr)
     }
 
     return x;
+}
+
+function checkBs(arr)
+{
+
 }
