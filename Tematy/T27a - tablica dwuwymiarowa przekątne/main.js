@@ -36,9 +36,6 @@ function showArray(t)
 
 function przekatne(t)
 {
-    let n = t.length;
-    let m = t[0].length;
-
     if(t[0][0]+t[1][1]+t[2][2]>t[2][0]+t[1][1]+t[0][2])
     {
         wynik.innerHTML += `<br>LG_PD > LD_PG`;
