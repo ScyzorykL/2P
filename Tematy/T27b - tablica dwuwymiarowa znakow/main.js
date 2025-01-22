@@ -35,6 +35,7 @@ btn.addEventListener('click', function(){
 ////////////////////////////////////////////////////////////////////////
 
     wynik.innerHTML += `Litera A wystąpiła razy: ${checkAs(arr)}<br>`;
+    wynik.innerHTML += `Najwięcej liter B znajduje się w wierszach: ${checkBs(arr)}<br>`;
 });
 
 function checkAs(arr)
@@ -56,5 +57,23 @@ function checkAs(arr)
 
 function checkBs(arr)
 {
+    let maxBCount = 0;
+    let rowI = -1;
 
+    for(let i=0; i<arr.length; i++)
+    {
+        let row = arr[i];
+        let countB = 0;
+        for(let j=0; j<arr.length; j++)
+        {
+            if(arr[i][j] === 'b')
+                countB++;
+        }
+        if(countB > maxBCount)
+        {
+            maxBCount = countB;
+            rowI = i;
+        }
+    }
+    return rowI;
 }
