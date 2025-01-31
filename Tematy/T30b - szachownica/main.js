@@ -21,10 +21,11 @@ function oddRow(n)
     for(let j=0; j<n; j++)
     {
         if(j%2!==0)
-            wynik.innerHTML += `<div id="black"></div>`;
+            wynik.innerHTML += `<span class="black"></span>`;
         else
-            wynik.innerHTML += `<div id="white"></div>`;
+            wynik.innerHTML += `<span class="white"></span>`;
     }
+    wynik.innerHTML += `<br>`;
 }
 
 function evenRow(n)
@@ -32,8 +33,9 @@ function evenRow(n)
     for(let j=0; j<n; j++)
     {
         if(j%2!==0)
-            wynik.innerHTML += `<div id="white"></div>`;
+            wynik.innerHTML += `<span class="white"></span>`;
         else
-            wynik.innerHTML += `<div id="black"></div>`;
+            wynik.innerHTML += `<span class="black"></span>`;
     }
+    wynik.innerHTML += `<br>`;
 }
