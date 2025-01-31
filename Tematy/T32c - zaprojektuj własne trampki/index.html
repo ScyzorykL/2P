@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie T32c - zaprojektuj własne trampki</title>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Formularz konkursu "Podrasuj swoje buty"</h1>
+        <p>Chcesz zamienić swoje stare trampki na nową, zaprojektowaną przez siebie parę butów? Napisz nam, dlaczego powinienes pożegnać się ze swoimi wysłużonymi butami, a być k=może zostaniesz jednym z laureatów konkursu!</p>
+    </header>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Podstawowe dane</legend>
+            <label for="imie">Imię i nazwisko: </label><input type="text" id="imie"><br>
+            <label for="email">Adres E-mail: </label><input type="email" id="email"><br>
+            <label for="tele">Numer telefonu: </label><input type="tel" id="tele"><br>
+            <label for="desc">Moje buty są TAKIE stare...</label><br>
+            <textarea id="desc" cols="30" rows="5" placeholder="nie więcej niż 300 znaków" maxlength="300"></textarea><br>
+        </fieldset>
+        <h2>Zaprojektuj własne trampki</h2>
+        <fieldset>
+            <legend>Własny projekt butów</legend>
+            <fieldset>
+                <legend>Pierwszy kolor</legend>
+                <input type="radio" id="red" name="color1"><label for="red">Czerwony</label><br>
+                <input type="radio" id="white" name="color1"><label for="white">Biały</label><br>
+                <input type="radio" id="blue" name="color1"><label for="blue">Niebieski</label><br>
+                <input type="radio" id="black" name="color1"><label for="black">Czarny</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Drugi kolor</legend>
+                <input type="color" id="color2"><label for="color2">Wybierz drugi kolor</label>
+            </fieldset>
+            <fieldset>
+                <legend>Rozmiar</legend>
+                <input type="range" min="1" max="75" id="size" value="1"><br>
+                <label for="size">Rozmiar zgodny ze standardowymi numerami butów (zaznaczone: <span id="rangeVal">1</span>)</label>
+            </fieldset>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>
