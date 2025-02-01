@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Zadanie T32c - zaprojektuj własne trampki</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
     <header>
         <h1>Formularz konkursu "Podrasuj swoje buty"</h1>
-        <p>Chcesz zamienić swoje stare trampki na nową, zaprojektowaną przez siebie parę butów? Napisz nam, dlaczego powinienes pożegnać się ze swoimi wysłużonymi butami, a być k=może zostaniesz jednym z laureatów konkursu!</p>
+        <h5>Autor strony: <i>Fabian Latosiński 2P_1</i></h5>
+        <p>Chcesz zamienić swoje stare trampki na nową, zaprojektowaną przez siebie parę butów? Napisz nam, dlaczego powinienes pożegnać się ze swoimi wysłużonymi butami, a być może zostaniesz jednym z laureatów konkursu!</p>
     </header>
     <hr>
     <form>
         <fieldset>
             <legend>Podstawowe dane</legend>
-            <label for="imie">Imię i nazwisko: </label><input type="text" id="imie"><br>
-            <label for="email">Adres E-mail: </label><input type="email" id="email"><br>
-            <label for="tele">Numer telefonu: </label><input type="tel" id="tele"><br>
+            <label for="imie">Imię i nazwisko: </label><input type="text" id="imie"><br><br>
+            <label for="email">Adres E-mail: </label><input type="email" id="email"><br><br>
+            <label for="tele">Numer telefonu: </label><input type="tel" id="tele"><br><br>
             <label for="desc">Moje buty są TAKIE stare...</label><br>
-            <textarea id="desc" cols="30" rows="5" placeholder="nie więcej niż 300 znaków" maxlength="300"></textarea><br>
+            <textarea id="desc" cols="40" rows="5" placeholder="nie więcej niż 300 znaków" maxlength="300"></textarea><br>
         </fieldset>
         <h2>Zaprojektuj własne trampki</h2>
         <fieldset>
@@ -32,15 +34,26 @@
             </fieldset>
             <fieldset>
                 <legend>Drugi kolor</legend>
-                <input type="color" id="color2"><label for="color2">Wybierz drugi kolor</label>
+                <input type="color" id="color2"> <label for="color2">Wybierz drugi kolor</label>
             </fieldset>
             <fieldset>
                 <legend>Rozmiar</legend>
                 <input type="range" min="1" max="75" id="size" value="1"><br>
                 <label for="size">Rozmiar zgodny ze standardowymi numerami butów (zaznaczone: <span id="rangeVal">1</span>)</label>
             </fieldset>
+            <fieldset>
+                <legend>Akcesoria (możesz wybrac kilka)</legend>
+                <input type="checkbox" id="a1" name="bonus"><label for="a1">Błyszczące sznurówki</label><br>
+                <input type="checkbox" id="a2" name="bonus"><label for="a2">Metalowe logo</label><br>
+                <input type="checkbox" id="a3" name="bonus"><label for="a3">Świecące podeszwy</label><br>
+                <input type="checkbox" id="a4" name="bonus"><label for="a4">Odtwarzacze MP3</label><br>
+            </fieldset>
         </fieldset>
+        <div id="ready">
+            <input type="submit" value="Podrasuj swoje buty!"> <input type="reset" value="Wyczyść">
+        </div>
     </form>
 </main>
+<script src="main.js"></script>
 </body>
 </html>
