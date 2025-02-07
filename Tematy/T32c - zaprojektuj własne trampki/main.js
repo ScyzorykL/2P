@@ -1,5 +1,5 @@
-const submit = document.querySelector("input[type='submit']");
-const reset = document.querySelector("input[type='reset']");
+const submit = document.querySelector("#submit");
+const wynik = document.querySelector("#wynik");
 const rangeVal = document.querySelector("#rangeVal");
 
 const imie = document.querySelector("#imie");
@@ -18,7 +18,21 @@ size.addEventListener("input", function()
 {
     rangeVal.innerHTML = size.value;
 });
-reset.addEventListener("click", function()
+
+//wynik
+
+submit.addEventListener("click", function()
 {
-   rangeVal.innerHTML = `1`;
+    wynik.innerHTML = `Przesłano formularz!`;
+
+    console.log(`Imię: ${imie.value}`);
+    console.log(`E-mail: ${email.value}`);
+    console.log(`Telefon: ${tele.value}`);
+    console.log(`Opis: ${desc.value}`);
+
+    console.log(`Buty:`);
+    console.log(`Kolor 1: ${color1.checked}`);
+    console.log(`Kolor 2: ${color2.value}`);
+    console.log(`Rozmiar: ${size.value}`);
+    console.log(`Akcesoria: ${bonus.checked}`);
 });

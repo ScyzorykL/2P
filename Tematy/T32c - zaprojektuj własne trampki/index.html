@@ -13,7 +13,7 @@
         <p>Chcesz zamienić swoje stare trampki na nową, zaprojektowaną przez siebie parę butów? Napisz nam, dlaczego powinienes pożegnać się ze swoimi wysłużonymi butami, a być może zostaniesz jednym z laureatów konkursu!</p>
     </header>
     <hr>
-    <form>
+    <section>
         <fieldset>
             <legend>Podstawowe dane</legend>
             <label for="imie">Imię i nazwisko: </label><input type="text" id="imie"><br><br>
@@ -50,9 +50,11 @@
             </fieldset>
         </fieldset>
         <div id="ready">
-            <input type="submit" value="Podrasuj swoje buty!"> <input type="reset" value="Wyczyść">
+            <button id="submit">Podrasuj swoje buty!</button>
         </div>
-    </form>
+        <h6 style="text-align: center">Wynik zostanie podany w konsoli</h6>
+    </section>
+    <section id="wynik" style="text-align: center"></section>
 </main>
 <script src="main.js"></script>
 </body>
