@@ -30,9 +30,17 @@ submit.addEventListener("click", function()
     console.log(`Telefon: ${tele.value}`);
     console.log(`Opis: ${desc.value}`);
 
-    console.log(`Buty:`);
-    console.log(`Kolor 1: ${color1.checked}`);
+    console.log(`\n\nButy:`);
+
+    for(const input of color1)
+        if(input.checked)
+            console.log(`Kolor 1: ${input.nextElementSibling.textContent}`);
+
     console.log(`Kolor 2: ${color2.value}`);
     console.log(`Rozmiar: ${size.value}`);
-    console.log(`Akcesoria: ${bonus.checked}`);
+
+    console.log(`\nAkcesoria:`);
+    for(const input of bonus)
+        if(input.checked)
+            console.log(`${input.nextElementSibling.textContent}`);
 });
