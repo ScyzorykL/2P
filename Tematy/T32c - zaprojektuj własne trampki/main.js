@@ -23,24 +23,24 @@ size.addEventListener("input", function()
 
 submit.addEventListener("click", function()
 {
-    wynik.innerHTML = `Przesłano formularz!`;
+    wynik.innerHTML = `Przesłano formularz!<br><br>`;
 
-    console.log(`Imię: ${imie.value}`);
-    console.log(`E-mail: ${email.value}`);
-    console.log(`Telefon: ${tele.value}`);
-    console.log(`Opis: ${desc.value}`);
+    wynik.innerHTML += `Imię: ${imie.value}<br>`;
+    wynik.innerHTML += `E-mail: ${email.value}<br>`;
+    wynik.innerHTML += `Telefon: ${tele.value}<br>`;
+    wynik.innerHTML += `Opis: ${desc.value}<br><br>`;
 
-    console.log(`\n\nButy:`);
+    wynik.innerHTML += `Buty:<br>`;
 
     for(const input of color1)
         if(input.checked)
-            console.log(`Kolor 1: ${input.nextElementSibling.textContent}`);
+            wynik.innerHTML += `Kolor 1: ${input.nextElementSibling.textContent}<br>`;
 
-    console.log(`Kolor 2: ${color2.value}`);
-    console.log(`Rozmiar: ${size.value}`);
+    wynik.innerHTML += `Kolor 2: ${color2.value}<br>`;
+    wynik.innerHTML += `Rozmiar: ${size.value}<br><br>`;
 
-    console.log(`\nAkcesoria:`);
+    wynik.innerHTML += `Akcesoria:<br>`;
     for(const input of bonus)
         if(input.checked)
-            console.log(`${input.nextElementSibling.textContent}`);
+            wynik.innerHTML += `${input.nextElementSibling.textContent}<br>`;
 });
