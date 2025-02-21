@@ -12,11 +12,18 @@
         <h2>Autor: Fabian Latosiński 2P_1</h2>
     </div>
     <section>
+        <p>Należy wykonać projekt, który zawiera formularz zmiany hasła.<br><br>
+            Formularz powinien zawierać:<br><br>
+            nazwę użytkownika (dowolne znaki, ale nie może być pusty),<br>
+            adres e-mail (nie może być pusty i zawiera prawidłowy adres e-mail z domeną zspglogow.pl),<br>
+            dwa pola do wprowadzenia hasła (minimum 8 znaków, litery małe i duże, cyfry i znaki specjalne).<br>
+            przycisk z napisem "Zmień hasło".<br>
+            Skrypt w przypadku prawidłowo wypełnionego formularza wyświetla dane na stronie (wiadomo, że to bez sensu, ale chodzi o łatwe sprawdzenie, czy wszystko działa prawidłowo).</p>
       <form enctype="text/plain" method="post" onsubmit="sprawdz(this);">
         <label for="nazwa">Nazwa użytkownika: </label><input id="nazwa" name="nazwa"><br>
         <label for="email">Email: </label><input id="email" name="email"><br><br>
         <label for="haslo1">Hasło: </label><input type="text" id="haslo1" name="haslo1"><br>
-        <label for="haslo2">Hasło: </label><input type="text" id="haslo2" name="haslo2"><br>
+        <label for="haslo2">Potwierdź hasło: </label><input type="text" id="haslo2" name="haslo2"><br>
         <input type="submit" value="Zmień hasło">
       </form>
     </section>
