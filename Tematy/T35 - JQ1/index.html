@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T35 - JQ1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<main>
+    <div id="header">
+        <h1>Zadanie T35 - JQ1</h1>
+        <h2>Autor: Fabian Latosiński 2P_1</h2>
+    </div>
+    <hr>
+    <section>
+        <p id="bibl">Na początek spróbuj wykonać prosty projekt wyświetlający tekst komunikatu na ekranie za pomocą jquery. Zapoznaj się z materiałem kursu o którym pisałem wyżej. Szczególnie zwróć uwagę na Rozpoczęcie pracy. Krótki film dostępny pokazany niżej pozwoli Ci "ogarnąć" o co w tym chodzi. W razie problemów dołączyłem pliki z rozwiązaniem - na dobry początek. Przeanalizuj i zmodyfikuj przykład - swoją produkcję zapisz na platformie.</p>
+    </section>
+    <section id="wynik">
+        <script>
+            $(function(){
+                alert("ta akcja została wykonana przez bibliotekę JQuery");
+            });
+            $('p').css("color", "green");
+
+            $('#bibl').click(function(){
+                $('#bibl').toggle("slow");
+            })
+        </script>
+    </section>
+</main>
+</body>
+</html>
