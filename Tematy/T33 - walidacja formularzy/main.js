@@ -7,7 +7,7 @@ function sprawdz(form)
         alert('Pole Nazwa użytkownika musi być wypełnione');
         form.imie.focus();
     }
-    if(form.email.value === '')
+    else if(form.email.value === '')
     {
         alert('Pole Email musi być wypełnione');
         form.zawod.focus();
@@ -18,7 +18,7 @@ function sprawdz(form)
         alert('Użyj prawidłowej domeny email');
         form.email.focus();
     }
-    if(form.haslo1.value<8 || form.haslo2.value<8)
+    else if(form.haslo1.value<8 || form.haslo2.value<8)
     {
         alert('Błędne hasło');
         form.haslo1.focus();

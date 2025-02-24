@@ -78,6 +78,11 @@ span
     padding: 10px;
 }
 
+#wynik
+{
+    height: 500px;
+}
+
 .black
 {
     width: 50px;
