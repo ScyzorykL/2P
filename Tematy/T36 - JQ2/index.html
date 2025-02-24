@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 36 JQ2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <h1>Zadanie T36 - JQ2</h1>
+    <h2>Autor: Fabian Latosiński 2P_1</h2>
+</div>
+
+<hr>
+
+<h2 id="jeden1">Technologie big data</h2>
+<section id="jeden2">Celem jest nauczenie studentów doboru odpowiednich technik analizy danych w zależności od skali rozpatrywanego problemu oraz rodzaju przeprowadzanej analizy. Zapoznanie studentów z technikami analizowania dużych zbiorów danych. Nauczenie ich pracy z wykorzystaniem nowoczesnych platform do składowania i przetwarzania danych.</section>
+
+<h2 id="dwa1">Zaawansowane technologie E-biznesowe</h2>
+<section id="dwa2">Celem przedmiotu jest zapoznanie studentów z zestawem podstawowych pojęć związanych z projektowaniem, integracją oraz oprogramowywaniem współczesnych wielowarstwowych systemów e-biznesowych opartych na technologii JEE.</section>
+
+<h2 id="trzy1">Wizualizacja i grafika dla menedżera</h2>
+<section id="trzy2">Celem przedmiotu jest doskonalenie umiejętności stosowania narzędzi informatycznych w rozwiązywaniu problemów ekonomicznych. Umiejętność wykorzystywania arkusza kalkulacyjnego do uzyskania optymalnego rozwiązania, analiza danych i wizualizacji wyników. Wykształcenie umiejętności samodzielnego tworzenia serwisów WWW oraz prezentacji multimedialnych.</section>
+
+<h2 id="cztery1">Programowanie i Tworzenie Aplikacji</h2>
+<section id="cztery2">Programowanie i tworzenie aplikacji to kluczowa dziedzina informatyki, która przygotowuje studentów do projektowania, implementacji i utrzymania różnorodnych aplikacji komputerowych. Studenci zdobywają umiejętności programowania w różnych językach i technologiach, tworzenia baz danych oraz integracji systemów. Dzięki temu są w stanie rozwijać nowoczesne aplikacje, które spełniają wymagania biznesowe oraz zapewniają wydajne i stabilne działanie.</section>
+
+<script>
+
+    $(function() {
+        $('#jeden1').click(function() {
+            $('#jeden2').toggle("slow");
+        });
+    });
+
+    $(function() {
+        $('#dwa1').click(function() {
+            $('#dwa2').toggle("slow");
+        });
+    });
+
+    $(function() {
+        $('#trzy1').click(function() {
+            $('#trzy2').toggle("slow");
+        });
+    });
+
+    $(function() {
+        $('#cztery1').click(function() {
+            $('#cztery2').toggle("slow");
+        });
+    });
+</script>
+</body>
+</html>
