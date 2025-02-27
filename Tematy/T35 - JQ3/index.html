@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T35 - JQ3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div id="gora">
+        <div id="menu">
+            <h2>MENU:</h2>
+            <ul>
+                <li><a href="#">Pozycja 1</a></li>
+                <li><a href="#">Pozycja 2</a></li>
+                <li><a href="#">Pozycja 3</a></li>
+            </ul>
+        </div>
+        <header>
+            <h1>Strona z Gwiazdą</h1>
+            <h3>Fabian Latosiński 2P_1</h3>
+        </header>
+    </div>
+    <div id="content">
+        <article>
+            <h1>Witaj na stronie</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ea eos libero, natus reiciendis similique sunt? A accusantium alias aliquid aspernatur assumenda blanditiis culpa dignissimos doloremque dolorum eius est exercitationem explicabo facilis ipsa iusto magni modi necessitatibus nostrum perspiciatis, possimus praesentium, quas, quia quidem quod rem saepe tempore unde velit vero voluptates? A ab asperiores delectus excepturi incidunt nesciunt provident quia quos ullam unde. Ab alias aliquid at atque blanditiis commodi consectetur, deleniti dolore doloribus earum eos error explicabo fuga, illum impedit in laborum minima molestias nam nemo nihil obcaecati odit officiis perferendis praesentium provident quas quasi qui reiciendis repellendus rerum saepe sequi similique suscipit, temporibus totam voluptatibus? Accusantium animi atque consequatur corporis delectus et excepturi fuga fugiat hic iste laboriosam pariatur, quae quam quas repellendus, sed vel velit vero voluptatibus voluptatum. Aliquid architecto atque autem commodi cum dignissimos dolor dolorem doloribus error eveniet explicabo fugiat fugit iste itaque iure maxime modi nesciunt nihil nobis numquam perferendis perspiciatis porro provident quasi reprehenderit, sed similique temporibus tenetur vitae, voluptates? Ad distinctio repellat suscipit voluptates. Atque laboriosam minima ut velit! A adipisci aliquam aspernatur autem, dolorem eos, fuga fugit hic illum in laudantium odio officiis, optio pariatur perferendis quod suscipit voluptate voluptatum.</p>
+        </article>
+        <img src="stars.jpg" alt="bomboclat" id="imag">
+    </div>
+    <footer>
+        <p>Zespół Szkół Politechnicznych w Głogowie. Wszelkie prawa zastrzeżone &copy;2025 r.</p>
+    </footer>
+</main>
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $('#imag').click(function()
+    {
+        $('#content').css('flex-direction', 'column');
+        $('#imag').css('width', '1000px');
+    });
+</script>
+</body>
+</html>

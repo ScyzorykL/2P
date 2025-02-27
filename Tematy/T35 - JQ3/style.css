@@ -1,0 +1,57 @@
+main
+{
+    width: 1000px;
+    margin-inline: auto;
+    font-family: Calibri;
+    border: black solid 1px;
+}
+
+#gora
+{
+    display: flex;
+}
+
+#menu
+{
+    background-color: #dfba82;
+    width: 250px;
+    height: 150px;
+}
+
+header
+{
+    background-color: #e30000;
+    color: #ffa216;
+    width: 750px;
+    text-align: center;
+}
+
+#content
+{
+    display: flex;
+    flex-direction: row;
+    transition: flex-direction 1s ease-in-out;
+}
+
+article
+{
+    padding: 50px;
+}
+
+img
+{
+    width: 380px;
+    height: 540px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+footer
+{
+    background-color: #c1c1c1;
+}
+
+footer p
+{
+    padding-left: 30px;
+}
