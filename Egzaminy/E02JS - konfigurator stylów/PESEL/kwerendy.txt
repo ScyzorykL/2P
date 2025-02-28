@@ -1,0 +1,4 @@
+1. CREATE USER 'Agnieszka'@'%'
+2. SELECT AVG(rocznik) FROM samochody WHERE marka='opel';
+3.
+4. alter table klasa drop COLUMN cena;
