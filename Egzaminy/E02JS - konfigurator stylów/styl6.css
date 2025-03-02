@@ -1,0 +1,62 @@
+body
+{
+    font-family: Georgia;
+}
+
+#gora
+{
+    display: flex;
+}
+
+#prawy-el
+{
+    display: flex;
+}
+
+#blok_lewy
+{
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+}
+
+#blok_prawy
+{
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+}
+
+#stopka
+{
+    background-color: dimgray;
+    color: white;
+}
+
+p
+{
+    padding: 10px;
+}
+
+img
+{
+    padding: 10px;
+    border: white solid 1px;
+}
+
+#indigo
+{
+    background-color: indigo;
+}
+
+#steelblue
+{
+    background-color: steelblue;
+}
+
+#olive
+{
+    background-color: olive;
+}
