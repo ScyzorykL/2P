@@ -19,6 +19,7 @@ body
     color: white;
     height: 600px;
     width: 30%;
+    overflow: auto;
 }
 
 #blok_prawy

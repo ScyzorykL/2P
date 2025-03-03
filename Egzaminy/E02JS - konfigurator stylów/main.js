@@ -1,5 +1,6 @@
 let Tabela1 = [document.querySelector('#indigo'), document.querySelector('#steelblue'), document.querySelector('#olive'), document.querySelector('#font-color'), document.querySelector('#font-size'), document.querySelector('#border'), document.querySelectorAll('[name="list-style"]')];
 const display = document.querySelector("#blok_prawy");
+const lista = document.querySelector("ul");
 
 Tabela1[0].addEventListener("click", function()
 {
@@ -19,10 +20,10 @@ Tabela1[3].addEventListener("change", function(e)
     display.style.color = e.target.value;
 });
 
-// Tabela1[4].addEventListener("input", function()
-// {
-//    display.style.fontsize = (Tabela1[4].value)`%`;
-// });
+Tabela1[4].addEventListener("change", function()
+{
+   display.style.fontSize = Tabela1[4].value + '%';
+});
 
 Tabela1[5].addEventListener("input", function()
 {
@@ -32,9 +33,13 @@ Tabela1[5].addEventListener("input", function()
         document.querySelector('img').style.border = `none`;
 });
 
-Tabela1[6].addEventListener("checked", function()
-{
-    Tabela1[6].forEach(inp => {
-        if(inp)
-    });
+Tabela1[6].forEach(e => {
+   e.addEventListener("input", function()
+   {
+      if(e.checked)
+      {
+          const i = e.id;
+          lista.style.listStyle = i;
+      }
+   });
 });
