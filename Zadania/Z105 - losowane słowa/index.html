@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z105 - losowane słowa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div id="header">
+    <h1>Zadanie 105 - losowane słowa</h1>
+    <h2>Autor: Fabian Latosiński 2P_1</h2>
+  </div>
+  <hr>
+  <section>
+    <p>Napisz program, w którym do jednowymiarowej tablicy znakowej wpisanych jest 10 znaków podanych przez użytkownika. Program wyświetla tę tablicę znaków, a następnie:</p>
+    <ul>
+      <li>pyta użytkownika o długość losowego słowa oraz ilość słów,</li>
+      <li>wyświetla podaną ilość słów składających się z podanej ilości znaków wygenerowanych ze znaków zapisanych w 10-elementowej tablicy stworzonej na początku programu.</li>
+    </ul>
+    <p>UWAGA! Znaki proszę podawać bez przecinków i innych znaków, przykład: <b>abcdefghij</b></p>
+    <label for="znaki">podaj 10 znaków, z których chcesz układać słowa (jeśli podasz więcej znaków zostaną one pominięte): </label><input type="text" id="znaki"><br><br>
+    <label for="dlugosc">jaką chcesz mieć długość losowanych słów? </label><input type="number" id="dlugosc" value="5"><br><br>
+    <label for="ile">ile słów chcesz wygenerować? </label><input type="number" id="ile" value="3"><br><br>
+    <button>Działaj!</button>
+  </section>
+  <section>
+    <h3>Znaki:</h3>
+    <p id="wynik1"></p>
+    <h3>Wylosowane słowa:</h3>
+    <p id="wynik2"></p>
+  </section>
+</main>
+</body>
+</html>
