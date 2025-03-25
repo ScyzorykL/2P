@@ -55,12 +55,12 @@ h2, h3
     text-align: center;
 }
 
-input[type="reset"]
+#reset
 {
     background-color: #FF0000;
 }
 
-input[type="submit"]
+#submit
 {
     background-color: #00FF00;
 }

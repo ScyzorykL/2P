@@ -6,6 +6,7 @@ const usluga_ = document.querySelector("#usluga");
 
 function aktywacja()
 {
+    event.preventDefault()
     wynik.innerHTML = ``;
 
     let imie = imie_.value;
@@ -13,7 +14,7 @@ function aktywacja()
     let email = email_.value.toLowerCase();
     let usluga = usluga_.value;
 
-    wynik.innerHTML += imie + `` + nazwisko + `<br>`;
+    wynik.innerHTML += imie + ` ` + nazwisko + `<br>`;
     wynik.innerHTML += email + `<br>`;
     wynik.innerHTML += `Usługa: ${usluga}`;
 
