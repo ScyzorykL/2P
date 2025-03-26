@@ -1,5 +1,5 @@
 const znaki_ = document.querySelector("#znaki");
-const dlugosc_ = document.querySelector("#dlugsc");
+const dlugosc_ = document.querySelector("#dlugosc");
 const ile_ = document.querySelector("#ile");
 const btn = document.querySelector("button");
 const wynik1 = document.querySelector("#wynik1");

@@ -11,7 +11,7 @@ btn.addEventListener("click", function()
 
         for(let i=0; i<w; i++)
         {
-            for(let j = 0; j < i; j++)
+            for(let j=0; j<i; j++)
                 wynik.innerHTML += c;
             wynik.innerHTML += `<br>`;
         }
