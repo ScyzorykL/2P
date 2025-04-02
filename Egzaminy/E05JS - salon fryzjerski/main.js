@@ -4,7 +4,7 @@ const wynik = document.querySelector("#wynik");
 function wykonaj()
 {
     let w;
-    for(el in wlosy)
+    for(el of wlosy)
     {
         if(el.checked)
         {
